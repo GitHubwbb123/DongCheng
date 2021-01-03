@@ -1,0 +1,2262 @@
+Warning[w6]: Type conflict for external/entry "gizTimerMs", in module hal_uart against external/entry in module gizwits_product; prototyped function vs K&R function
+  /* In module hal_uart: */
+  /* K&R Function, args 0, attr 0 */
+  int (__cc_version2 gizTimerMs)();
+  /* In module gizwits_product: */
+  /* Function, args 0, attr 0 */
+  void (__cc_version2 gizTimerMs)(void);
+Warning[w6]: Type conflict for external/entry "setkeyscan", in module main against external/entry in module Hal_key; function return types are different; different basic types
+  /* In module main: */
+  /* K&R Function, args 0, attr 0 */
+  int (__cc_version2 setkeyscan)();
+  /* In module Hal_key: */
+  /* K&R Function, args 0, attr 0 */
+  void (__cc_version2 setkeyscan)();
+Warning[w6]: Type conflict for external/entry "uart0_byte", in module gizwits_product against external/entry in module hal_uart; prototyped function vs K&R function
+  /* In module gizwits_product: */
+  /* K&R Function, args 0, attr 0 */
+  int (__cc_version2 uart0_byte)();
+  /* In module hal_uart: */
+  /* Function, args 1, attr 0 */
+  void (__cc_version2 uart0_byte)(uint8_t);
+    typedef unsigned char uint8_t;
+################################################################################
+#                                                                              #
+#      IAR Universal Linker V6.4.6.89                                          #
+#                                                                              #
+#           Link time     =  17/Aug/2017  14:42:36                             #
+#           Target CPU    =  MSP430                                            #
+#           List file     =  D:\gizwits_mcu_code_generatorV3.0\out\GizwitsMCUM #
+#                            SP430F149201708171200100074580a55\MCU_MSP430F149_ #
+#                            source\Debug\List\MSP430F149.map                  #
+#           Output file 1 =  D:\gizwits_mcu_code_generatorV3.0\out\GizwitsMCUM #
+#                            SP430F149201708171200100074580a55\MCU_MSP430F149_ #
+#                            source\Debug\Exe\MSP430F149.txt                   #
+#                            Format: msp430_txt                                #
+#           Command line  =  -f                                                #
+#                            C:\Users\Gizwits\AppData\Local\Temp\EW92E1.tmp    #
+#                            (D:\gizwits_mcu_code_generatorV3.0\out\GizwitsMCU #
+#                            MSP430F149201708171200100074580a55\MCU_MSP430F149 #
+#                            _source\Debug\Obj\common.r43                      #
+#                            D:\gizwits_mcu_code_generatorV3.0\out\GizwitsMCUM #
+#                            SP430F149201708171200100074580a55\MCU_MSP430F149_ #
+#                            source\Debug\Obj\dataPointTools.r43               #
+#                            D:\gizwits_mcu_code_generatorV3.0\out\GizwitsMCUM #
+#                            SP430F149201708171200100074580a55\MCU_MSP430F149_ #
+#                            source\Debug\Obj\gizwits_product.r43              #
+#                            D:\gizwits_mcu_code_generatorV3.0\out\GizwitsMCUM #
+#                            SP430F149201708171200100074580a55\MCU_MSP430F149_ #
+#                            source\Debug\Obj\gizwits_protocol.r43             #
+#                            D:\gizwits_mcu_code_generatorV3.0\out\GizwitsMCUM #
+#                            SP430F149201708171200100074580a55\MCU_MSP430F149_ #
+#                            source\Debug\Obj\Hal_key.r43                      #
+#                            D:\gizwits_mcu_code_generatorV3.0\out\GizwitsMCUM #
+#                            SP430F149201708171200100074580a55\MCU_MSP430F149_ #
+#                            source\Debug\Obj\hal_uart.r43                     #
+#                            D:\gizwits_mcu_code_generatorV3.0\out\GizwitsMCUM #
+#                            SP430F149201708171200100074580a55\MCU_MSP430F149_ #
+#                            source\Debug\Obj\main.r43                         #
+#                            D:\gizwits_mcu_code_generatorV3.0\out\GizwitsMCUM #
+#                            SP430F149201708171200100074580a55\MCU_MSP430F149_ #
+#                            source\Debug\Obj\ringbuffer.r43                   #
+#                            -o                                                #
+#                            D:\gizwits_mcu_code_generatorV3.0\out\GizwitsMCUM #
+#                            SP430F149201708171200100074580a55\MCU_MSP430F149_ #
+#                            source\Debug\Exe\MSP430F149.txt                   #
+#                            -Fmsp430_txt -l                                   #
+#                            D:\gizwits_mcu_code_generatorV3.0\out\GizwitsMCUM #
+#                            SP430F149201708171200100074580a55\MCU_MSP430F149_ #
+#                            source\Debug\List\MSP430F149.map                  #
+#                            -xms -IE:\IAR\430\LIB\ -f                         #
+#                            E:\IAR\430\config\linker\lnk430f149.xcl           #
+#                            (-cmsp430 -QCODE_I=CODE_ID -QTLS16_I=TLS16_ID     #
+#                            -D__iar_HWMUL=130 -Z(CONST)INFO=1000-10FF         #
+#                            -Z(CONST)INFOA=1080-10FF                          #
+#                            -Z(CONST)INFOB=1000-107F                          #
+#                            -Z(DATA)DATA16_I,DATA16_Z,DATA16_N,TLS16_I=0200-0 #
+#                            9FF                                               #
+#                            -Z(DATA)DATA16_HEAP+_DATA16_HEAP_SIZE             #
+#                            -Z(DATA)CODE_I -Z(DATA)CSTACK+_STACK_SIZE#        #
+#                            -Z(CONST)DATA16_C,DATA16_ID,TLS16_ID,DIFUNCT,CHEC #
+#                            KSUM=1100-FFDF                                    #
+#                            -Z(CODE)CSTART,ISR_CODE,CODE_ID=1100-FFDF         #
+#                            -P(CODE)CODE=1100-FFDF -Z(CODE)INTVEC=FFE0-FFFF   #
+#                            -Z(CODE)RESET=FFFE-FFFF) -f                       #
+#                            E:\IAR\430\config\linker\multiplier.xcl           #
+#                            (-e?Mul8Hw=?Mul8 -e?Mul16Hw=?Mul16                #
+#                            -e?Mul16to32uHw=?Mul16to32u                       #
+#                            -e?Mul16to32sHw=?Mul16to32s -e?Mul32Hw=?Mul32     #
+#                            -e_Mul64iHw=_Mul64i                               #
+#                            -e_Mul32u32uto64iHw=_Mul32u32uto64i               #
+#                            -e?Mul32fHw=_Mul32f -e_Mul64fHwPtr=_Mul64fPtr)    #
+#                            -D_STACK_SIZE=50                                  #
+#                            E:\IAR\430\lib\dlib\dl430fn.r43                   #
+#                            -e_PrintfLarge=_Printf -e_ScanfLarge=_Scanf       #
+#                            -D_DATA16_HEAP_SIZE=50 -s __program_start         #
+#                            -D_DATA20_HEAP_SIZE=50)                           #
+#                                                                              #
+#                           Copyright (C) 1987-2016 IAR Systems AB.            #
+################################################################################
+
+
+
+
+
+                ****************************************
+                *                                      *
+                *           CROSS REFERENCE            *
+                *                                      *
+                ****************************************
+
+       Program entry at :           190A  Relocatable, from module : ?cstart
+
+
+
+
+                ****************************************
+                *                                      *
+                *            RUNTIME MODEL             *
+                *                                      *
+                ****************************************
+
+  __Heap_Handler             = Basic
+  __SystemLibrary            = DLib
+  __core                     = 430
+  __dlib_file_descriptor     = 0
+  __dlib_full_locale_support = 0
+  __double_size              = 32
+  __pic                      = no
+  __reg_r4                   = free
+  __reg_r5                   = free
+  __rt_version               = 3
+
+                ****************************************
+                *                                      *
+                *    AUTOMATIC SYMBOL REDIRECTIONS     *
+                *                                      *
+                ****************************************
+
+                  There are no automatic symbol redirections.
+
+
+
+                ****************************************
+                *                                      *
+                *              MODULE MAP              *
+                *                                      *
+                ****************************************
+
+
+  DEFINED ABSOLUTE ENTRIES
+    *************************************************************************
+
+  DEFINED ABSOLUTE ENTRIES
+  PROGRAM MODULE, NAME : ?ABS_ENTRY_MOD
+
+Absolute parts
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _DATA20_HEAP_SIZE       0050 
+           _DATA16_HEAP_SIZE       0050 
+           _STACK_SIZE             0050 
+           __iar_HWMUL             0130            ?Mul16to32sHw (?Mul16to32sHw)
+                                                   ?Mul32Hw (?Mul32Hw)
+                                                   ?Mul32fHw (?Mul32fHw)
+                                                   Segment part 1 (?Mul8Hw)
+    *************************************************************************
+
+  FILE NAME : D:\gizwits_mcu_code_generatorV3.0\out\GizwitsMCUMSP430F149201708171200100074580a55\MCU_MSP430F149_source\Debug\Obj\common.r43
+  PROGRAM MODULE, NAME : common
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 4D20 - 4D67 (0x48 bytes), align: 1
+  Segment part 3.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           gizProtocolSum          4D20            gizProtocolCommonAck (gizwits_protocol)
+                                                   gizProtocolErrorCmd (gizwits_protocol)
+                                                   gizProtocolGetDeviceInfo (gizwits_protocol)
+                                                   gizProtocolGetOnePacket (gizwits_protocol)
+                                                   gizProtocolIssuedDataAck (gizwits_protocol)
+                                                   gizReportData (gizwits_protocol)
+                                                   gizwitsSetMode (gizwits_protocol)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5244 - 525D (0x1a bytes), align: 1
+  Segment part 4.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           exchangeBytes           5244            gizProtocolCommonAck (gizwits_protocol)
+                                                   gizProtocolErrorCmd (gizwits_protocol)
+                                                   gizProtocolGetDeviceInfo (gizwits_protocol)
+                                                   gizProtocolGetOnePacket (gizwits_protocol)
+                                                   gizProtocolModuleStatus (gizwits_protocol)
+                                                   gizProtocolNTP (gizwits_protocol)
+                                                   gizReportData (gizwits_protocol)
+                                                   gizwitsSetMode (gizwits_protocol)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 4AEA - 4B41 (0x58 bytes), align: 1
+  Segment part 5.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           exchangeWord            4AEA            gizProtocolNTP (gizwits_protocol)
+               calls direct
+
+    *************************************************************************
+
+  FILE NAME : D:\gizwits_mcu_code_generatorV3.0\out\GizwitsMCUMSP430F149201708171200100074580a55\MCU_MSP430F149_source\Debug\Obj\dataPointTools.r43
+  PROGRAM MODULE, NAME : dataPointTools
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 4A86 - 4AE9 (0x64 bytes), align: 1
+  Segment part 2.             Intra module refs:   gizStandardDecompressionValue
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           gizByteOrderExchange    4A86            gizDataPoints2ReportData (gizwits_protocol)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 4FB0 - 4FDF (0x30 bytes), align: 1
+  Segment part 3.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           gizY2X                  4FB0            gizDataPoints2ReportData (gizwits_protocol)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5068 - 5093 (0x2c bytes), align: 1
+  Segment part 4.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           gizX2Y                  5068            gizDataPoint2Event (gizwits_protocol)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 4CD6 - 4D1F (0x4a bytes), align: 1
+  Segment part 7.             Intra module refs:   gizStandardCompressValue
+                                                   gizStandardDecompressionValue
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           gizAcrossByteJudge      4CD6 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 3928 - 3A61 (0x13a bytes), align: 1
+  Segment part 10.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           gizStandardDecompressionValue
+                                   3928            gizDataPoint2Event (gizwits_protocol)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 41DC - 42B1 (0xd6 bytes), align: 1
+  Segment part 11.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           gizStandardCompressValue
+                                   41DC            gizDataPoints2ReportData (gizwits_protocol)
+               calls direct
+
+    *************************************************************************
+
+  FILE NAME : D:\gizwits_mcu_code_generatorV3.0\out\GizwitsMCUMSP430F149201708171200100074580a55\MCU_MSP430F149_source\Debug\Obj\gizwits_product.r43
+  PROGRAM MODULE, NAME : gizwits_product
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_Z
+  Relative segment, address: 0200 - 0203 (0x4 bytes), align: 1
+  Segment part 15.            Intra module refs:   gizGetTimerCount
+                                                   gizTimerMs
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           timerMsCount            0200 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 317C - 333B (0x1c0 bytes), align: 1
+  Segment part 16.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           gizwitsEventProcess     317C            gizwitsHandle (gizwits_protocol)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 544A - 544B (0x2 bytes), align: 1
+  Segment part 17.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           userHandle              544A            main (main)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 53D0 - 53DD (0xe bytes), align: 1
+  Segment part 18.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           userInit                53D0            main (main)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5428 - 5431 (0xa bytes), align: 1
+  Segment part 19.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           gizTimerMs              5428            Timer_A (hal_uart)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5432 - 543B (0xa bytes), align: 1
+  Segment part 20.            Intra module refs:   uartWrite
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           gizGetTimerCount        5432            gizDevReportPolicy (gizwits_protocol)
+                                                   gizProtocolAckHandle (gizwits_protocol)
+                                                   gizProtocolReboot (gizwits_protocol)
+                                                   gizProtocolResendData (gizwits_protocol)
+                                                   gizProtocolWaitAck (gizwits_protocol)
+                                                   gizwitsHandle (gizwits_protocol)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5444 - 5445 (0x2 bytes), align: 1
+  Segment part 21.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           mcuRestart              5444            gizProtocolReboot (gizwits_protocol)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 4382 - 444B (0xca bytes), align: 1
+  Segment part 22.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           uartWrite               4382            gizProtocolCommonAck (gizwits_protocol)
+                                                   gizProtocolErrorCmd (gizwits_protocol)
+                                                   gizProtocolGetDeviceInfo (gizwits_protocol)
+                                                   gizProtocolIssuedDataAck (gizwits_protocol)
+                                                   gizProtocolResendData (gizwits_protocol)
+                                                   gizReportData (gizwits_protocol)
+                                                   gizwitsSetMode (gizwits_protocol)
+               calls direct
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1100 - 1114 (0x15 bytes), align: 0
+  Segment part 2.             Intra module refs:   gizwitsEventProcess
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1115 - 1129 (0x15 bytes), align: 0
+  Segment part 3.             Intra module refs:   gizwitsEventProcess
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 112A - 113E (0x15 bytes), align: 0
+  Segment part 4.             Intra module refs:   gizwitsEventProcess
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 113F - 1155 (0x17 bytes), align: 0
+  Segment part 5.             Intra module refs:   gizwitsEventProcess
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1156 - 115E (0x9 bytes), align: 0
+  Segment part 6.             Intra module refs:   gizwitsEventProcess
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 115F - 1171 (0x13 bytes), align: 0
+  Segment part 7.             Intra module refs:   gizwitsEventProcess
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1172 - 119C (0x2b bytes), align: 0
+  Segment part 8.             Intra module refs:   gizwitsEventProcess
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 119D - 11AD (0x11 bytes), align: 0
+  Segment part 9.             Intra module refs:   gizwitsEventProcess
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 11AE - 11BD (0x10 bytes), align: 0
+  Segment part 10.            Intra module refs:   gizwitsEventProcess
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 11BE - 11D1 (0x14 bytes), align: 0
+  Segment part 11.            Intra module refs:   gizwitsEventProcess
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 11D2 - 11E3 (0x12 bytes), align: 0
+  Segment part 12.            Intra module refs:   uartWrite
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 11E4 - 11E9 (0x6 bytes), align: 0
+  Segment part 13.            Intra module refs:   uartWrite
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 11EA - 11EB (0x2 bytes), align: 0
+  Segment part 14.            Intra module refs:   uartWrite
+
+    *************************************************************************
+
+  FILE NAME : D:\gizwits_mcu_code_generatorV3.0\out\GizwitsMCUMSP430F149201708171200100074580a55\MCU_MSP430F149_source\Debug\Obj\gizwits_protocol.r43
+  PROGRAM MODULE, NAME : gizwits_protocol
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_Z
+  Relative segment, address: 020C - 031A (0x10f bytes), align: 0
+  Segment part 69.            Intra module refs:   gizDevReportPolicy
+                                                   gizProtocolAckHandle
+                                                   gizProtocolIssuedProcess
+                                                   gizProtocolModuleInfoHandle
+                                                   gizProtocolModuleStatus
+                                                   gizProtocolNTP
+                                                   gizProtocolResendData
+                                                   gizProtocolWaitAck
+                                                   gizProtocolWaitAckCheck
+                                                   gizReportData
+                                                   gizwitsHandle
+                                                   gizwitsInit
+                                                   gizwitsSetMode
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           gizwitsProtocol         020C 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 031B - 0322 (0x8 bytes), align: 0
+  Segment part 70.            Intra module refs:   gizPutData
+                                                   gizwitsHandle
+                                                   gizwitsInit
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           pRb                     031B 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 0323 - 0350 (0x2e bytes), align: 0
+  Segment part 71.            Intra module refs:   gizwitsInit
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           rbBuf                   0323 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 4C3C - 4C89 (0x4e bytes), align: 1
+  Segment part 78.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           gizPutData              4C3C            UART0_RXISR (hal_uart)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 503C - 5067 (0x2c bytes), align: 1
+  Segment part 79.            Intra module refs:   gizProtocolErrorCmd
+                                                   gizProtocolGetDeviceInfo
+                                                   gizReportData
+                                                   gizwitsSetMode
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           gizProtocolHeadInit     503C 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 49B2 - 4A1F (0x6e bytes), align: 1
+  Segment part 80.            Intra module refs:   gizReportData
+                                                   gizwitsSetMode
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           gizProtocolWaitAck      49B2 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 37C6 - 3927 (0x162 bytes), align: 1
+  Segment part 81.            Intra module refs:   gizProtocolIssuedProcess
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           gizDataPoint2Event      37C6 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 444C - 4507 (0xbc bytes), align: 1
+  Segment part 82.            Intra module refs:   gizDevReportPolicy
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           gizCheckReport          444C 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 42B2 - 4381 (0xd0 bytes), align: 1
+  Segment part 83.            Intra module refs:   gizDevReportPolicy
+                                                   gizProtocolIssuedProcess
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           gizDataPoints2ReportData
+                                   42B2 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 3E02 - 3F01 (0x100 bytes), align: 1
+  Segment part 84.            Intra module refs:   gizwitsHandle
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           gizProtocolIssuedProcess
+                                   3E02 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 3A62 - 3B9B (0x13a bytes), align: 1
+  Segment part 85.            Intra module refs:   gizwitsHandle
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           gizProtocolIssuedDataAck
+                                   3A62 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 4002 - 40F7 (0xf6 bytes), align: 1
+  Segment part 86.            Intra module refs:   gizDevReportPolicy
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           gizReportData           4002 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 4508 - 45B9 (0xb2 bytes), align: 1
+  Segment part 87.            Intra module refs:   gizwitsHandle
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           gizDevReportPolicy      4508 
+               calls direct
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 0204 - 0207 (0x4 bytes), align: 1
+  Segment part 72.            Intra module refs:   gizDevReportPolicy
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           gizDevReportPolicy::lastRepTime
+                                   0204 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 34F2 - 3661 (0x170 bytes), align: 1
+  Segment part 88.            Intra module refs:   gizwitsHandle
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           gizProtocolGetOnePacket
+                                   34F2 
+               calls direct
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 0351 - 0351 (0x1 bytes), align: 0
+  Segment part 73.            Intra module refs:   gizProtocolGetOnePacket
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           gizProtocolGetOnePacket::protocolFlag
+                                   0351 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 0208 - 0209 (0x2 bytes), align: 1
+  Segment part 74.            Intra module refs:   gizProtocolGetOnePacket
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           gizProtocolGetOnePacket::protocolCount
+                                   0208 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 0352 - 0352 (0x1 bytes), align: 0
+  Segment part 75.            Intra module refs:   gizProtocolGetOnePacket
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           gizProtocolGetOnePacket::lastData
+                                   0352 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 0353 - 0353 (0x1 bytes), align: 0
+  Segment part 76.            Intra module refs:   gizProtocolGetOnePacket
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           gizProtocolGetOnePacket::debugCount
+                                   0353 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 48C2 - 4939 (0x78 bytes), align: 1
+  Segment part 89.            Intra module refs:   gizProtocolAckHandle
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           gizProtocolResendData   48C2 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 4EDC - 4F13 (0x38 bytes), align: 1
+  Segment part 90.            Intra module refs:   gizwitsHandle
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           gizProtocolWaitAckCheck
+                                   4EDC 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 493A - 49B1 (0x78 bytes), align: 1
+  Segment part 91.            Intra module refs:   gizwitsHandle
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           gizProtocolCommonAck    493A 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 466A - 4717 (0xae bytes), align: 1
+  Segment part 92.            Intra module refs:   gizwitsHandle
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           gizProtocolAckHandle    466A 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 3F02 - 4001 (0x100 bytes), align: 1
+  Segment part 93.            Intra module refs:   gizwitsHandle
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           gizProtocolGetDeviceInfo
+                                   3F02 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 47BE - 4843 (0x86 bytes), align: 1
+  Segment part 94.            Intra module refs:   gizwitsHandle
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           gizProtocolErrorCmd     47BE 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 4718 - 47BD (0xa6 bytes), align: 1
+  Segment part 95.            Intra module refs:   gizwitsHandle
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           gizProtocolNTP          4718 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 50EC - 5115 (0x2a bytes), align: 1
+  Segment part 96.            Intra module refs:   gizwitsHandle
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           gizProtocolReboot       50EC 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 255A - 2925 (0x3cc bytes), align: 1
+  Segment part 97.            Intra module refs:   gizwitsHandle
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           gizProtocolModuleStatus
+                                   255A 
+               calls direct
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 0354 - 0355 (0x2 bytes), align: 0
+  Segment part 77.            Intra module refs:   gizProtocolModuleStatus
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           gizProtocolModuleStatus::lastStatus
+                                   0354 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 4BEC - 4C3B (0x50 bytes), align: 1
+  Segment part 98.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           gizwitsInit             4BEC            main (main)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 2926 - 2CC7 (0x3a2 bytes), align: 1
+  Segment part 99.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           gizwitsSetMode          2926            pro_sklp (Hal_key)
+                                                   pro_sksp (Hal_key)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 4E6A - 4EA3 (0x3a bytes), align: 1
+  Segment part 102.           Intra module refs:   gizwitsHandle
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           gizProtocolModuleInfoHandle
+                                   4E6A 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 2CC8 - 2FA9 (0x2e2 bytes), align: 1
+  Segment part 103.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           gizwitsHandle           2CC8            main (main)
+               calls direct
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 11EC - 120A (0x1f bytes), align: 0
+  Segment part 2.             Intra module refs:   gizPutData
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 120B - 1223 (0x19 bytes), align: 0
+  Segment part 3.             Intra module refs:   gizPutData
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1224 - 124C (0x29 bytes), align: 0
+  Segment part 4.             Intra module refs:   gizProtocolHeadInit
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 124D - 1261 (0x15 bytes), align: 0
+  Segment part 5.             Intra module refs:   gizProtocolWaitAck
+                                                   gizProtocolWaitAckCheck
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1262 - 128B (0x2a bytes), align: 0
+  Segment part 6.             Intra module refs:   gizDataPoint2Event
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 128C - 12B1 (0x26 bytes), align: 0
+  Segment part 7.             Intra module refs:   gizCheckReport
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 12B2 - 12C4 (0x13 bytes), align: 0
+  Segment part 8.             Intra module refs:   gizCheckReport
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 12C5 - 12D7 (0x13 bytes), align: 0
+  Segment part 9.             Intra module refs:   gizCheckReport
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 12D8 - 12EA (0x13 bytes), align: 0
+  Segment part 10.            Intra module refs:   gizCheckReport
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 12EB - 1301 (0x17 bytes), align: 0
+  Segment part 11.            Intra module refs:   gizCheckReport
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1302 - 1331 (0x30 bytes), align: 0
+  Segment part 12.            Intra module refs:   gizDataPoints2ReportData
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1332 - 1361 (0x30 bytes), align: 0
+  Segment part 13.            Intra module refs:   gizProtocolIssuedProcess
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1362 - 1377 (0x16 bytes), align: 0
+  Segment part 14.            Intra module refs:   gizProtocolIssuedDataAck
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1378 - 139F (0x28 bytes), align: 0
+  Segment part 15.            Intra module refs:   gizProtocolIssuedDataAck
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 13A0 - 13B5 (0x16 bytes), align: 0
+  Segment part 16.            Intra module refs:   gizProtocolIssuedDataAck
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 13B6 - 13DA (0x25 bytes), align: 0
+  Segment part 17.            Intra module refs:   gizReportData
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 13DB - 13F5 (0x1b bytes), align: 0
+  Segment part 18.            Intra module refs:   gizProtocolCommonAck
+                                                   gizProtocolErrorCmd
+                                                   gizProtocolGetDeviceInfo
+                                                   gizReportData
+                                                   gizwitsSetMode
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 13F6 - 140B (0x16 bytes), align: 0
+  Segment part 19.            Intra module refs:   gizDevReportPolicy
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 140C - 1423 (0x18 bytes), align: 0
+  Segment part 20.            Intra module refs:   gizDevReportPolicy
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1424 - 1452 (0x2f bytes), align: 0
+  Segment part 21.            Intra module refs:   gizProtocolGetOnePacket
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1453 - 1472 (0x20 bytes), align: 0
+  Segment part 22.            Intra module refs:   gizProtocolResendData
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1473 - 148A (0x18 bytes), align: 0
+  Segment part 23.            Intra module refs:   gizProtocolResendData
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 148B - 14B4 (0x2a bytes), align: 0
+  Segment part 24.            Intra module refs:   gizProtocolCommonAck
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 14B5 - 14DC (0x28 bytes), align: 0
+  Segment part 25.            Intra module refs:   gizProtocolAckHandle
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 14DD - 150C (0x30 bytes), align: 0
+  Segment part 26.            Intra module refs:   gizProtocolGetDeviceInfo
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 150D - 1515 (0x9 bytes), align: 0
+  Segment part 27.            Intra module refs:   gizProtocolGetDeviceInfo
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1516 - 151E (0x9 bytes), align: 0
+  Segment part 28.            Intra module refs:   gizProtocolGetDeviceInfo
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 151F - 1527 (0x9 bytes), align: 0
+  Segment part 29.            Intra module refs:   gizProtocolGetDeviceInfo
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1528 - 1530 (0x9 bytes), align: 0
+  Segment part 30.            Intra module refs:   gizProtocolGetDeviceInfo
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1531 - 1551 (0x21 bytes), align: 0
+  Segment part 31.            Intra module refs:   gizProtocolGetDeviceInfo
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1552 - 1572 (0x21 bytes), align: 0
+  Segment part 32.            Intra module refs:   gizProtocolGetDeviceInfo
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1573 - 159D (0x2b bytes), align: 0
+  Segment part 33.            Intra module refs:   gizProtocolErrorCmd
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 159E - 15B1 (0x14 bytes), align: 0
+  Segment part 34.            Intra module refs:   gizProtocolNTP
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 15B2 - 15E0 (0x2f bytes), align: 0
+  Segment part 35.            Intra module refs:   gizProtocolModuleStatus
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 15E1 - 1600 (0x20 bytes), align: 0
+  Segment part 36.            Intra module refs:   gizProtocolModuleStatus
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1601 - 161A (0x1a bytes), align: 0
+  Segment part 37.            Intra module refs:   gizProtocolModuleStatus
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 161B - 1634 (0x1a bytes), align: 0
+  Segment part 38.            Intra module refs:   gizProtocolModuleStatus
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1635 - 1652 (0x1e bytes), align: 0
+  Segment part 39.            Intra module refs:   gizProtocolModuleStatus
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1653 - 1671 (0x1f bytes), align: 0
+  Segment part 40.            Intra module refs:   gizProtocolModuleStatus
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1672 - 1690 (0x1f bytes), align: 0
+  Segment part 41.            Intra module refs:   gizProtocolModuleStatus
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1691 - 16B2 (0x22 bytes), align: 0
+  Segment part 42.            Intra module refs:   gizProtocolModuleStatus
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 16B3 - 16CE (0x1c bytes), align: 0
+  Segment part 43.            Intra module refs:   gizProtocolModuleStatus
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 16CF - 16ED (0x1f bytes), align: 0
+  Segment part 44.            Intra module refs:   gizProtocolModuleStatus
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 16EE - 1707 (0x1a bytes), align: 0
+  Segment part 45.            Intra module refs:   gizProtocolModuleStatus
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1708 - 1724 (0x1d bytes), align: 0
+  Segment part 46.            Intra module refs:   gizProtocolModuleStatus
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1725 - 173F (0x1b bytes), align: 0
+  Segment part 47.            Intra module refs:   gizProtocolModuleStatus
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1740 - 175B (0x1c bytes), align: 0
+  Segment part 48.            Intra module refs:   gizProtocolModuleStatus
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 175C - 1768 (0xd bytes), align: 0
+  Segment part 49.            Intra module refs:   gizProtocolModuleStatus
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1769 - 177B (0x13 bytes), align: 0
+  Segment part 50.            Intra module refs:   gizwitsInit
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 177C - 178C (0x11 bytes), align: 0
+  Segment part 51.            Intra module refs:   gizwitsInit
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 178D - 17A1 (0x15 bytes), align: 0
+  Segment part 52.            Intra module refs:   gizwitsSetMode
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 17A2 - 17B0 (0xf bytes), align: 0
+  Segment part 54.            Intra module refs:   gizProtocolModuleInfoHandle
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 17B1 - 17D5 (0x25 bytes), align: 0
+  Segment part 55.            Intra module refs:   gizwitsHandle
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 17D6 - 17E6 (0x11 bytes), align: 0
+  Segment part 56.            Intra module refs:   gizwitsHandle
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 17E7 - 17FA (0x14 bytes), align: 0
+  Segment part 57.            Intra module refs:   gizwitsHandle
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 17FB - 1800 (0x6 bytes), align: 0
+  Segment part 58.            Intra module refs:   gizwitsHandle
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1801 - 1802 (0x2 bytes), align: 0
+  Segment part 59.            Intra module refs:   gizwitsHandle
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1803 - 180F (0xd bytes), align: 0
+  Segment part 60.            Intra module refs:   gizwitsHandle
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1810 - 181B (0xc bytes), align: 0
+  Segment part 61.            Intra module refs:   gizwitsHandle
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 181C - 182F (0x14 bytes), align: 0
+  Segment part 62.            Intra module refs:   gizwitsHandle
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1830 - 184D (0x1e bytes), align: 0
+  Segment part 63.            Intra module refs:   gizwitsHandle
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 184E - 1863 (0x16 bytes), align: 0
+  Segment part 64.            Intra module refs:   gizwitsHandle
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1864 - 187C (0x19 bytes), align: 0
+  Segment part 65.            Intra module refs:   gizwitsHandle
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 187D - 1892 (0x16 bytes), align: 0
+  Segment part 66.            Intra module refs:   gizwitsHandle
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1893 - 18A9 (0x17 bytes), align: 0
+  Segment part 67.            Intra module refs:   gizwitsHandle
+
+    *************************************************************************
+
+  FILE NAME : D:\gizwits_mcu_code_generatorV3.0\out\GizwitsMCUMSP430F149201708171200100074580a55\MCU_MSP430F149_source\Debug\Obj\Hal_key.r43
+  PROGRAM MODULE, NAME : Hal_key
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_AN
+  Relative segment, address: 0020 - 0020 (0x1 bytes), align: 0
+  Segment part 1. ROOT        Intra module refs:   Timer_A (hal_uart)
+                                                   setkeyscan
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P1IN                    0020 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0022 - 0022 (0x1 bytes), align: 0
+  Segment part 2. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P1DIR                   0022 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 0356 - 0356 (0x1 bytes), align: 0
+  Segment part 6.             Intra module refs:   setkeyscan
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           skeycount               0356            Timer_A (hal_uart)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 0357 - 0357 (0x1 bytes), align: 0
+  Segment part 7.             Intra module refs:   setkeyscan
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           skpttime                0357            Timer_A (hal_uart)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 0358 - 0358 (0x1 bytes), align: 0
+  Segment part 8.             Intra module refs:   setkeyscan
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           skpflag                 0358            Timer_A (hal_uart)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 0359 - 0359 (0x1 bytes), align: 0
+  Segment part 9.             Intra module refs:   pro_sklp
+                                                   pro_sksp
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           sflag                   0359 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 4B42 - 4B99 (0x58 bytes), align: 1
+  Segment part 12.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           setkeyscan              4B42            main (main)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 534A - 535B (0x12 bytes), align: 1
+  Segment part 10.            Intra module refs:   setkeyscan
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           pro_sksp                534A 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 535C - 536D (0x12 bytes), align: 1
+  Segment part 11.            Intra module refs:   setkeyscan
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           pro_sklp                535C 
+               calls direct
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 18AA - 18C8 (0x1f bytes), align: 0
+  Segment part 4.             Intra module refs:   pro_sksp
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 18C9 - 18E5 (0x1d bytes), align: 0
+  Segment part 5.             Intra module refs:   pro_sklp
+
+    *************************************************************************
+
+  FILE NAME : D:\gizwits_mcu_code_generatorV3.0\out\GizwitsMCUMSP430F149201708171200100074580a55\MCU_MSP430F149_source\Debug\Obj\hal_uart.r43
+  PROGRAM MODULE, NAME : hal_uart
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_AN
+  Relative segment, address: 0000 - 0000 (0x1 bytes), align: 0
+  Segment part 1. ROOT        Intra module refs:   uart_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           IE1                     0000 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0002 - 0002 (0x1 bytes), align: 0
+  Segment part 2. ROOT        Intra module refs:   int_clk
+                                                   uart0_byte
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           IFG1                    0002 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0004 - 0004 (0x1 bytes), align: 0
+  Segment part 3. ROOT        Intra module refs:   uart_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ME1                     0004 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0001 - 0001 (0x1 bytes), align: 0
+  Segment part 4. ROOT        Intra module refs:   uart_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           IE2                     0001 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0003 - 0003 (0x1 bytes), align: 0
+  Segment part 5. ROOT        Intra module refs:   uart1_byte
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           IFG2                    0003 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0005 - 0005 (0x1 bytes), align: 0
+  Segment part 6. ROOT        Intra module refs:   uart_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ME2                     0005 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 002A - 002A (0x1 bytes), align: 0
+  Segment part 8. ROOT        Intra module refs:   TimerAInit
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P2DIR                   002A 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 002B - 002B (0x1 bytes), align: 0
+  Segment part 9. ROOT        Intra module refs:   TimerAInit
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P2IFG                   002B 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 002C - 002C (0x1 bytes), align: 0
+  Segment part 10. ROOT       Intra module refs:   TimerAInit
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P2IES                   002C 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 002D - 002D (0x1 bytes), align: 0
+  Segment part 11. ROOT       Intra module refs:   TimerAInit
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P2IE                    002D 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 001B - 001B (0x1 bytes), align: 0
+  Segment part 12. ROOT       Intra module refs:   uart_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P3SEL                   001B 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0070 - 0070 (0x1 bytes), align: 0
+  Segment part 13. ROOT       Intra module refs:   uart_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           U0CTL                   0070 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0071 - 0071 (0x1 bytes), align: 0
+  Segment part 14. ROOT       Intra module refs:   uart_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           U0TCTL                  0071 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0073 - 0073 (0x1 bytes), align: 0
+  Segment part 15. ROOT       Intra module refs:   uart_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           U0MCTL                  0073 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0074 - 0074 (0x1 bytes), align: 0
+  Segment part 16. ROOT       Intra module refs:   uart_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           U0BR0                   0074 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0075 - 0075 (0x1 bytes), align: 0
+  Segment part 17. ROOT       Intra module refs:   uart_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           U0BR1                   0075 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0076 - 0076 (0x1 bytes), align: 0
+  Segment part 18. ROOT       Intra module refs:   UART0_RXISR
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           U0RXBUF                 0076 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0077 - 0077 (0x1 bytes), align: 0
+  Segment part 19. ROOT       Intra module refs:   uart0_byte
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           U0TXBUF                 0077 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0078 - 0078 (0x1 bytes), align: 0
+  Segment part 20. ROOT       Intra module refs:   uart_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           U1CTL                   0078 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0079 - 0079 (0x1 bytes), align: 0
+  Segment part 21. ROOT       Intra module refs:   uart_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           U1TCTL                  0079 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 007B - 007B (0x1 bytes), align: 0
+  Segment part 22. ROOT       Intra module refs:   uart_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           U1MCTL                  007B 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 007C - 007C (0x1 bytes), align: 0
+  Segment part 23. ROOT       Intra module refs:   uart_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           U1BR0                   007C 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 007D - 007D (0x1 bytes), align: 0
+  Segment part 24. ROOT       Intra module refs:   uart_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           U1BR1                   007D 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 007F - 007F (0x1 bytes), align: 0
+  Segment part 25. ROOT       Intra module refs:   uart1_byte
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           U1TXBUF                 007F 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0160 - 0161 (0x2 bytes), align: 0
+  Segment part 26. ROOT       Intra module refs:   TimerAInit
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TACTL                   0160 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0162 - 0163 (0x2 bytes), align: 0
+  Segment part 27. ROOT       Intra module refs:   TimerAInit
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TACCTL0                 0162 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0172 - 0173 (0x2 bytes), align: 0
+  Segment part 28. ROOT       Intra module refs:   TimerAInit
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TACCR0                  0172 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0057 - 0057 (0x1 bytes), align: 0
+  Segment part 29. ROOT       Intra module refs:   int_clk
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           BCSCTL1                 0057 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0058 - 0058 (0x1 bytes), align: 0
+  Segment part 30. ROOT       Intra module refs:   int_clk
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           BCSCTL2                 0058 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 020A - 020B (0x2 bytes), align: 1
+  Segment part 35.            Intra module refs:   Timer_A
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           sec1000                 020A 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 4A20 - 4A85 (0x66 bytes), align: 1
+  Segment part 36.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           uart_init               4A20            main (main)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5116 - 513F (0x2a bytes), align: 1
+  Segment part 37.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           int_clk                 5116            main (main)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5140 - 5165 (0x26 bytes), align: 1
+  Segment part 38.            Intra module refs:   UART0_RXISR::??INTVEC 18
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           UART0_RXISR             5140 
+               interrupt function
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5446 - 5447 (0x2 bytes), align: 1
+  Segment part 39.            Intra module refs:   UART1_RXISR::??INTVEC 6
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           UART1_RXISR             5446 
+               interrupt function
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5300 - 5313 (0x14 bytes), align: 1
+  Segment part 40.            Intra module refs:   putchar
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           uart1_byte              5300 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5314 - 5325 (0x12 bytes), align: 1
+  Segment part 41.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           uart0_byte              5314            uartWrite (gizwits_product)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 51D0 - 51EF (0x20 bytes), align: 1
+  Segment part 42.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           putchar                 51D0            _Prout (?xprout)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5094 - 50BF (0x2c bytes), align: 1
+  Segment part 43.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TimerAInit              5094            main (main)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 4E2E - 4E69 (0x3c bytes), align: 1
+  Segment part 44.            Intra module refs:   Timer_A::??INTVEC 12
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Timer_A                 4E2E 
+               interrupt function
+               calls direct
+    -------------------------------------------------------------------------
+INTVEC
+  Common segment, address: FFE0 - FFE7 (0x8 bytes), align: 1
+  Segment part 31. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           UART1_RXISR::??INTVEC 6
+                                   FFE6 
+    -------------------------------------------------------------------------
+INTVEC
+  Common segment, address: FFE0 - FFED (0xe bytes), align: 1
+  Segment part 32. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Timer_A::??INTVEC 12    FFEC 
+    -------------------------------------------------------------------------
+INTVEC
+  Common segment, address: FFE0 - FFF3 (0x14 bytes), align: 1
+  Segment part 33. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           UART0_RXISR::??INTVEC 18
+                                   FFF2 
+
+    *************************************************************************
+
+  FILE NAME : D:\gizwits_mcu_code_generatorV3.0\out\GizwitsMCUMSP430F149201708171200100074580a55\MCU_MSP430F149_source\Debug\Obj\main.r43
+  PROGRAM MODULE, NAME : main
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_AN
+  Relative segment, address: 0120 - 0121 (0x2 bytes), align: 0
+  Segment part 1. ROOT        Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           WDTCTL                  0120 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 035A - 0360 (0x7 bytes), align: 0
+  Segment part 4.             Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           currentDataPoint        035A            gizwitsEventProcess (gizwits_product)
+                                                   userInit (gizwits_product)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 4F14 - 4F49 (0x36 bytes), align: 1
+  Segment part 5.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           main                    4F14            Segment part 18 (?cstart)
+               calls direct
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 18E6 - 18F0 (0xb bytes), align: 0
+  Segment part 3.             Intra module refs:   main
+
+    *************************************************************************
+
+  FILE NAME : D:\gizwits_mcu_code_generatorV3.0\out\GizwitsMCUMSP430F149201708171200100074580a55\MCU_MSP430F149_source\Debug\Obj\ringbuffer.r43
+  PROGRAM MODULE, NAME : ringbuffer
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 518A - 51AD (0x24 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           rbCreate                518A            gizwitsInit (gizwits_protocol)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 51AE - 51CF (0x22 bytes), align: 1
+  Segment part 4.             Intra module refs:   rbCanRead
+                                                   rbCanWrite
+                                                   rbRead
+                                                   rbWrite
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           rbCapacity              51AE 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 40F8 - 41DB (0xe4 bytes), align: 1
+  Segment part 5.             Intra module refs:   rbCanWrite
+                                                   rbRead
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           rbCanRead               40F8            gizProtocolGetOnePacket (gizwits_protocol)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 4FE0 - 500D (0x2e bytes), align: 1
+  Segment part 6.             Intra module refs:   rbWrite
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           rbCanWrite              4FE0 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 2FAA - 317B (0x1d2 bytes), align: 1
+  Segment part 7.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           rbRead                  2FAA            gizProtocolGetOnePacket (gizwits_protocol)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 333C - 34F1 (0x1b6 bytes), align: 1
+  Segment part 8.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           rbWrite                 333C            gizPutData (gizwits_protocol)
+               calls direct
+
+    *************************************************************************
+
+  FILE NAME : E:\IAR\430\lib\dlib\dl430fn.r43
+  LIBRARY MODULE, NAME : ?_exit
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 5440, align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _exit                   5440            exit (?exit)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5440 - 5443 (0x4 bytes), align: 1
+  Segment part 6.             Intra module refs:   _exit
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?cstart
+
+  SEGMENTS IN THE MODULE
+  ======================
+CSTACK
+  Relative segment, address: 09B0, align: 1
+  Segment part 1.
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 020C, align: 1
+  Segment part 2.
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: 190A - 190D (0x4 bytes), align: 1
+  Segment part 9.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __program_start         190A            ?reset_vector (?reset_vector)
+                                                   Absolute parts (?ABS_ENTRY_MOD)
+           ?cstart_begin           190A 
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: 190E - 1919 (0xc bytes), align: 1
+  Segment part 13.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?cstart_init_zero       190E            currentDataPoint (main)
+                                                   gizDevReportPolicy::lastRepTime (gizwits_protocol)
+                                                   gizProtocolGetOnePacket::debugCount (gizwits_protocol)
+                                                   gizProtocolGetOnePacket::lastData (gizwits_protocol)
+                                                   gizProtocolGetOnePacket::protocolCount (gizwits_protocol)
+                                                   gizProtocolGetOnePacket::protocolFlag (gizwits_protocol)
+                                                   gizProtocolModuleStatus::lastStatus (gizwits_protocol)
+                                                   gizwitsProtocol (gizwits_protocol)
+                                                   pRb (gizwits_protocol)
+                                                   rbBuf (gizwits_protocol)
+                                                   sec1000 (hal_uart)
+                                                   sflag (Hal_key)
+                                                   skeycount (Hal_key)
+                                                   skpflag (Hal_key)
+                                                   skpttime (Hal_key)
+                                                   timerMsCount (gizwits_product)
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: 191A - 1921 (0x8 bytes), align: 1
+  Segment part 18.            Intra module refs:   Segment part 9
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?cstart_call_main       191A 
+           ?cstart_end             1922 
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?reset_vector
+
+  SEGMENTS IN THE MODULE
+  ======================
+RESET
+  Relative segment, address: FFFE - FFFF (0x2 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?reset_vector           FFFE            Segment part 9 (?cstart)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?div64i
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 45BA - 4669 (0xb0 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _Div64u                 45BA            _LitobLarge (?xprintflarge)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 525E - 5277 (0x1a bytes), align: 1
+  Segment part 4.             Intra module refs:   _Div64u
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?div
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 52C2 - 52D7 (0x16 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           div                     52C2            _GenldLarge (?xprintflarge)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?Epilogue
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 536E - 536F (0x2 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?Epilogue8              536E            gizProtocolGetOnePacket (gizwits_protocol)
+                                                   gizProtocolIssuedDataAck (gizwits_protocol)
+                                                   gizStandardDecompressionValue (dataPointTools)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5370 - 5371 (0x2 bytes), align: 1
+  Segment part 1.             Intra module refs:   ?Epilogue8
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?Epilogue7              5370 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5372 - 5373 (0x2 bytes), align: 1
+  Segment part 2.             Intra module refs:   ?Epilogue7
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?Epilogue6              5372            _GenldLarge (?xprintflarge)
+                                                   _LdtobLarge (?xprintflarge)
+                                                   _LitobLarge (?xprintflarge)
+                                                   _PrintfLarge (?xprintflarge)
+                                                   gizProtocolIssuedProcess (gizwits_protocol)
+                                                   gizReportData (gizwits_protocol)
+                                                   gizwitsEventProcess (gizwits_product)
+                                                   rbRead (ringbuffer)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5374 - 5375 (0x2 bytes), align: 1
+  Segment part 3.             Intra module refs:   ?Epilogue6
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?Epilogue5              5374            gizwitsHandle (gizwits_protocol)
+                                                   rbWrite (ringbuffer)
+                                                   uartWrite (gizwits_product)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5376 - 5377 (0x2 bytes), align: 1
+  Segment part 4.             Intra module refs:   ?Epilogue5
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?Epilogue4              5376            _PutcharsLarge (?xprintflarge)
+                                                   exchangeWord (common)
+                                                   gizByteOrderExchange (dataPointTools)
+                                                   gizProtocolErrorCmd (gizwits_protocol)
+                                                   gizProtocolSum (common)
+                                                   gizX2Y (dataPointTools)
+                                                   gizY2X (dataPointTools)
+                                                   pad (?xprintflarge)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5378 - 537F (0x8 bytes), align: 1
+  Segment part 5.             Intra module refs:   ?Epilogue4
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?Epilogue3              5378            gizCheckReport (gizwits_protocol)
+                                                   gizDataPoint2Event (gizwits_protocol)
+                                                   gizDevReportPolicy (gizwits_protocol)
+                                                   gizProtocolGetDeviceInfo (gizwits_protocol)
+                                                   gizProtocolWaitAck (gizwits_protocol)
+                                                   gizStandardCompressValue (dataPointTools)
+                                                   gizwitsSetMode (gizwits_protocol)
+                                                   rbCanWrite (ringbuffer)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?exit
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 543C - 543F (0x4 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           exit                    543C            Segment part 18 (?cstart)
+               calls direct
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?Mul32fHw
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 3B9C - 3CD1 (0x136 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?Mul32fHw               3B9C            _LdtobLarge (?xprintflarge)
+                                                   scale (?xprintflarge)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?Cast32f32i
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 4844 - 48C1 (0x7e bytes), align: 1
+  Segment part 1.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _Cast32uto32f           4844            _LdtobLarge (?xprintflarge)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : _Cast32fto32u
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 5404 - 540F (0xc bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _Cast32fto32u           5404            _LdtobLarge (?xprintflarge)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?FLT_Extract
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 4C8A - 4CD5 (0x4c bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?FLT_Extract            4C8A            _Cast32fto32u (_Cast32fto32u)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?FLT_LT
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 4B9A - 4BEB (0x52 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?FLT_LT                 4B9A            _LdtobLarge (?xprintflarge)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : _Div32f
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 3CD2 - 3E01 (0x130 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _Div32f                 3CD2            _LdtobLarge (?xprintflarge)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : _Add32f
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 3662 - 3665 (0x4 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _Sub32f                 3662            _LdtobLarge (?xprintflarge)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 3666 - 37C5 (0x160 bytes), align: 1
+  Segment part 1.             Intra module refs:   _Sub32f
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _Add32f                 3666 
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?DivMod816u
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 52AA - 52C1 (0x18 bytes), align: 1
+  Segment part 1.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?DivMod16u              52AA            ?DivMod16s (?DivMod816s)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?DivMod816s
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 4F80 - 4FAF (0x30 bytes), align: 1
+  Segment part 1.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?DivMod16s              4F80            div (?div)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?DivMod32u
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 4EA4 - 4EDB (0x38 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?DivMod32u              4EA4            ?DivMod32s (?DivMod32s)
+                                                   _LdtobLarge (?xprintflarge)
+                                                   gizDevReportPolicy (gizwits_protocol)
+                                                   gizY2X (dataPointTools)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?DivMod32s
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 4DB0 - 4DEF (0x40 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?DivMod32s              4DB0            _LdtobLarge (?xprintflarge)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?ShiftLeft16
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 541C - 5427 (0xc bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?ShiftLeft16            541C            gizStandardCompressValue (dataPointTools)
+                                                   gizStandardDecompressionValue (dataPointTools)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?ShiftRight816s
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 53F8 - 5403 (0xc bytes), align: 1
+  Segment part 1.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?ShiftRight16s          53F8            gizStandardCompressValue (dataPointTools)
+                                                   gizStandardDecompressionValue (dataPointTools)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?ShiftRight16u_n
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 5278 - 527B (0x4 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?ShiftRight16u_7        5278            __iar_Dunscale (?xdunscal)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 527C - 527F (0x4 bytes), align: 1
+  Segment part 1.             Intra module refs:   ?ShiftRight16u_7
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?ShiftRight16u_6        527C 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5280 - 5283 (0x4 bytes), align: 1
+  Segment part 2.             Intra module refs:   ?ShiftRight16u_6
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?ShiftRight16u_5        5280 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5284 - 5287 (0x4 bytes), align: 1
+  Segment part 3.             Intra module refs:   ?ShiftRight16u_5
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?ShiftRight16u_4        5284 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5288 - 5291 (0xa bytes), align: 1
+  Segment part 4.             Intra module refs:   ?ShiftRight16u_4
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?ShiftRight16u_3        5288 
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?memchr
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 52D8 - 52EB (0x14 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __iar_Memchr            52D8            _PrintfLarge (?xprintflarge)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?memcpy
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 5326 - 5337 (0x12 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           memcpy                  5326            Segment part 11 (?xprintflarge)
+                                                   _GenldLarge (?xprintflarge)
+                                                   _LdtobLarge (?xprintflarge)
+                                                   gizDevReportPolicy (gizwits_protocol)
+                                                   gizProtocolCommonAck (gizwits_protocol)
+                                                   gizProtocolGetDeviceInfo (gizwits_protocol)
+                                                   gizProtocolGetOnePacket (gizwits_protocol)
+                                                   gizProtocolIssuedDataAck (gizwits_protocol)
+                                                   gizProtocolIssuedProcess (gizwits_protocol)
+                                                   gizProtocolModuleInfoHandle (gizwits_protocol)
+                                                   gizProtocolNTP (gizwits_protocol)
+                                                   gizProtocolWaitAck (gizwits_protocol)
+                                                   gizReportData (gizwits_protocol)
+                                                   gizStandardDecompressionValue (dataPointTools)
+                                                   rbRead (ringbuffer)
+                                                   rbWrite (ringbuffer)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?memset
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 5338 - 5349 (0x12 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           memset                  5338            gizDataPoints2ReportData (gizwits_protocol)
+                                                   gizProtocolAckHandle (gizwits_protocol)
+                                                   gizProtocolGetDeviceInfo (gizwits_protocol)
+                                                   gizProtocolHeadInit (gizwits_protocol)
+                                                   gizProtocolIssuedProcess (gizwits_protocol)
+                                                   gizProtocolWaitAck (gizwits_protocol)
+                                                   gizProtocolWaitAckCheck (gizwits_protocol)
+                                                   gizwitsHandle (gizwits_protocol)
+                                                   gizwitsInit (gizwits_protocol)
+                                                   userInit (gizwits_product)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?memzero
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 53A4 - 53B3 (0x10 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __data16_memzero        53A4            ?cstart_init_zero (?cstart)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?Mul8Hw
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 51F0 - 51F3 (0x4 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?Mul8Hw                 51F0            _LitobLarge (?xprintflarge)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 51F4 - 520B (0x18 bytes), align: 1
+  Segment part 1.             Intra module refs:   ?Mul8Hw
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?Mul16Hw                51F4 
+           ?Mul16to32uHw           51F4 
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?Mul16to32sHw
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 5292 - 52A9 (0x18 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?Mul16to32sHw           5292            _LdtobLarge (?xprintflarge)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?Mul32Hw
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 500E - 503B (0x2e bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?Mul32Hw                500E            gizX2Y (dataPointTools)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?printf
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 520C - 5227 (0x1c bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           printf                  520C            gizCheckReport (gizwits_protocol)
+                                                   gizDataPoint2Event (gizwits_protocol)
+                                                   gizDataPoints2ReportData (gizwits_protocol)
+                                                   gizDevReportPolicy (gizwits_protocol)
+                                                   gizProtocolAckHandle (gizwits_protocol)
+                                                   gizProtocolCommonAck (gizwits_protocol)
+                                                   gizProtocolErrorCmd (gizwits_protocol)
+                                                   gizProtocolGetDeviceInfo (gizwits_protocol)
+                                                   gizProtocolGetOnePacket (gizwits_protocol)
+                                                   gizProtocolHeadInit (gizwits_protocol)
+                                                   gizProtocolIssuedDataAck (gizwits_protocol)
+                                                   gizProtocolIssuedProcess (gizwits_protocol)
+                                                   gizProtocolModuleInfoHandle (gizwits_protocol)
+                                                   gizProtocolModuleStatus (gizwits_protocol)
+                                                   gizProtocolNTP (gizwits_protocol)
+                                                   gizProtocolResendData (gizwits_protocol)
+                                                   gizProtocolWaitAck (gizwits_protocol)
+                                                   gizProtocolWaitAckCheck (gizwits_protocol)
+                                                   gizPutData (gizwits_protocol)
+                                                   gizReportData (gizwits_protocol)
+                                                   gizwitsEventProcess (gizwits_product)
+                                                   gizwitsHandle (gizwits_protocol)
+                                                   gizwitsInit (gizwits_protocol)
+                                                   gizwitsSetMode (gizwits_protocol)
+                                                   main (main)
+                                                   pro_sklp (Hal_key)
+                                                   pro_sksp (Hal_key)
+                                                   uartWrite (gizwits_product)
+               calls direct
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?strchr
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 53B4 - 53C1 (0xe bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __iar_Strchr            53B4            _PrintfLarge (?xprintflarge)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?strlen
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 5392 - 53A3 (0x12 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           strlen                  5392            _PrintfLarge (?xprintflarge)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?xdunscal
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 4D68 - 4DAF (0x48 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __iar_Dunscale          4D68            _LdtobLarge (?xprintflarge)
+               calls direct
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?xprintflarge
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 20CA - 2559 (0x490 bytes), align: 1
+  Segment part 18.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _PrintfLarge            20CA            printf (?printf)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5410 - 541B (0xc bytes), align: 1
+  Segment part 20.            Intra module refs:   _PrintfLarge
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 53EC - 53F7 (0xc bytes), align: 1
+  Segment part 22.            Intra module refs:   _PrintfLarge
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 52EC - 52FF (0x14 bytes), align: 1
+  Segment part 25.            Intra module refs:   _PrintfLarge
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 1922 - 19A1 (0x80 bytes), align: 1
+  Segment part 8.             Intra module refs:   _PrintfLarge
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           LoadInt                 1922 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 19A2 - 19AF (0xe bytes), align: 1
+  Segment part 9.             Intra module refs:   LoadInt
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 19B0 - 1C0F (0x260 bytes), align: 1
+  Segment part 10.            Intra module refs:   _LdtobLarge
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           _GenldLarge             19B0 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 1C10 - 1C1F (0x10 bytes), align: 1
+  Segment part 11.            Intra module refs:   _GenldLarge
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 1C20 - 1C3D (0x1e bytes), align: 1
+  Segment part 12.            Intra module refs:   _GenldLarge
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 1C3E - 1C8F (0x52 bytes), align: 1
+  Segment part 13.            Intra module refs:   _LdtobLarge
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           scale                   1C3E 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 1C90 - 1EE1 (0x252 bytes), align: 1
+  Segment part 14.            Intra module refs:   _PrintfLarge
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           _LdtobLarge             1C90 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 1EE2 - 20AD (0x1cc bytes), align: 1
+  Segment part 15.            Intra module refs:   _PrintfLarge
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           _LitobLarge             1EE2 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 20AE - 20BF (0x12 bytes), align: 1
+  Segment part 16.            Intra module refs:   _LitobLarge
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 20C0 - 20C9 (0xa bytes), align: 1
+  Segment part 17.            Intra module refs:   LoadInt
+                                                   _LitobLarge
+                                                   _PrintfLarge
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 4F4A - 4F7F (0x36 bytes), align: 1
+  Segment part 26.            Intra module refs:   Segment part 22
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           pad                     4F4A 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5166 - 5189 (0x24 bytes), align: 1
+  Segment part 27.            Intra module refs:   _PrintfLarge
+                                                   _PutcharsLarge
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           _PutcharLarge           5166 
+               calls indirect
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 50C0 - 50EB (0x2c bytes), align: 1
+  Segment part 28.            Intra module refs:   Segment part 20
+                                                   pad
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           _PutcharsLarge          50C0 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 53DE - 53EB (0xe bytes), align: 1
+  Segment part 19.            Intra module refs:   _PrintfLarge
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 53C2 - 53CF (0xe bytes), align: 1
+  Segment part 21.            Intra module refs:   _PrintfLarge
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5380 - 5391 (0x12 bytes), align: 1
+  Segment part 23.            Intra module refs:   _PrintfLarge
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 4DF0 - 4E2D (0x3e bytes), align: 1
+  Segment part 24.            Intra module refs:   _PrintfLarge
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 18F1 - 18F7 (0x7 bytes), align: 0
+  Segment part 2.             Intra module refs:   _PrintfLarge
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 18F8 - 18FB (0x4 bytes), align: 0
+  Segment part 3.             Intra module refs:   _LdtobLarge
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 18FC - 18FF (0x4 bytes), align: 0
+  Segment part 4.             Intra module refs:   _LdtobLarge
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1900 - 1903 (0x4 bytes), align: 0
+  Segment part 5.             Intra module refs:   _LdtobLarge
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1904 - 1907 (0x4 bytes), align: 0
+  Segment part 6.             Intra module refs:   _LdtobLarge
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1908 - 1909 (0x2 bytes), align: 0
+  Segment part 7.             Intra module refs:   _GenldLarge
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?xprout
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 5228 - 5243 (0x1c bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _Prout                  5228            printf (?printf)
+               calls direct
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?__exit
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 5448 - 5449 (0x2 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __exit                  5448            Segment part 6 (?_exit)
+                                                   _exit (?_exit)
+
+
+
+
+                ****************************************
+                *                                      *
+                *      SEGMENTS IN ADDRESS ORDER       *
+                *                                      *
+                ****************************************
+
+
+SEGMENT              SPACE    START ADDRESS   END ADDRESS     SIZE  TYPE  ALIGN
+=======              =====    =============   ===========     ====  ====  =====
+DATA16_AN                              0000 - 0005               6   rel    0
+                                       001B - 001B               1 
+                                       0020 - 0020               1 
+                                       0022 - 0022               1 
+                                       002A - 002D               4 
+                                       0057 - 0058               2 
+                                       0070 - 0071               2 
+                                       0073 - 0079               7 
+                                       007B - 007D               3 
+                                       007F - 007F               1 
+                                       0120 - 0121               2 
+                                       0160 - 0163               4 
+                                       0172 - 0173               2 
+DATA16_I                                  0200                       dse    0
+DATA16_Z                               0200 - 0360             161   rel    1
+CSTACK                                 09B0 - 09FF              50   rel    1
+DATA16_C                               1100 - 1909             80A   rel    0
+CSTART                                 190A - 1921              18   rel    1
+<CODE> 1                               1922 - 544B            3B2A   rel    1
+INTVEC                                 FFE0 - FFF3              14   com    1
+RESET                                  FFFE - FFFF               2   rel    1
+
+                ****************************************
+                *                                      *
+                *        END OF CROSS REFERENCE        *
+                *                                      *
+                ****************************************
+
+ 15 192 bytes of CODE  memory
+    433 bytes of DATA  memory (+ 36 absolute )
+  2 058 bytes of CONST memory
+
+Errors: none
+Warnings: 3
+
